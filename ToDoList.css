@@ -1,0 +1,90 @@
+h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 40px;
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px 0;
+    list-style: none;
+}
+
+#input-task {
+    height: 30px;
+    border: none;
+    border-bottom: 4px solid royalblue;
+}
+
+.new-task {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 25px;
+    margin: 20px 0;
+}
+
+#input-task[placeholder] {
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+
+
+li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
+    column-gap: 15px;
+    align-items: center;
+}
+
+input.checkb {
+    width: 20px;
+    height: 20px;
+}
+
+#add-task-button {
+    background: royalblue;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+
+#task-list {
+    list-style: none;
+    font-size: 24px;
+}
+
+.delete-btn {
+    border: none;
+    background: none;
+    color: red;
+    font-size: 30px;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.cross-line {
+
+}
+#task-list input:checked ~ .task {
+    color: grey;
+    text-decoration: line-through;
+    transition: 1.1s;
+}
